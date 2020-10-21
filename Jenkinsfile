@@ -1,8 +1,9 @@
 pipeline {
-    agent { 
+    agent none
+    stages{
+		agent { 
 		label 'Dev'
 	}
-    stages{
 	    stage('Checkout') { 
 		    
 		steps{
